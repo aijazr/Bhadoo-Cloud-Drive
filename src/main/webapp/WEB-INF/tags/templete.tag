@@ -16,11 +16,11 @@
     <meta name="google-site-verification" content="ReTB1LPGTaMBFG8EIW7EoAIXcr3QKu-RibNeVm7WkeM" />
     <link rel=mask-icon href="//cdn.jsdelivr.net/gh/jscdn/images@1.0.1/PBG_Corporation_Owner_Profile.svg" color="#5bbad5">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
     <!-- Google fonts - Lato | Open Sans | Poppins | Roboto | Work Sans -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Open+Sans|Poppins|Work+Sans" rel="stylesheet">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.default.css" id="theme-stylesheet">
     <!-- Favicon-->
     <!-- Font Awesome CDN-->
     <script src="https://use.fontawesome.com/99347ac47f.js"></script>
@@ -90,7 +90,7 @@
             <div class="sidebar-header d-flex align-items-center">
                 <c:choose>
                     <c:when test='${empty(user)}'>
-                        <div class="avatar"><img src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/img/guest.png" alt="Guest"
+                        <div class="avatar"><img src="${pageContext.request.contextPath}/img/guest.png" alt="Guest"
                                                  class="img-fluid rounded-circle"></div>
                         <div class="title">
                             <p>Welcome</p>
@@ -127,13 +127,13 @@
     </div>
 </div>
 <!-- Javascript files-->
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/tether.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/jquery.cookie.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/jquery.validate.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/front.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Cloud-Drive/src/main/resources/static/js/sticky-footer.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/tether.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.cookie.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/front.js"></script>
+<script src="${pageContext.request.contextPath}/js/sticky-footer.js"></script>
 <jsp:invoke fragment="javascript"/>
 </body>
 </html>
